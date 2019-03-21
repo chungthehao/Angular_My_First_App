@@ -4,13 +4,15 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'; // typescript cần để biết nó ở đâu
 
 import { AppComponent } from './app.component';
-import { ServerComponent } from './server/server.component'; // Để typescript biết đường import từ đâu
+import { ServerComponent } from './server/server.component';
+import { ServersComponent } from './servers/servers.component'; // Để typescript biết đường import từ đâu
 
 @NgModule({
   // Tạo ra các files thôi chưa đủ, phải báo cho Angular biết nếu muốn xài
   declarations: [
     AppComponent,
-    ServerComponent, // Để Angular biết mình muốn xài component này cho app module
+    ServerComponent,
+    ServersComponent, // Để Angular biết mình muốn xài component này cho app module
   ],
   imports: [
     BrowserModule,
