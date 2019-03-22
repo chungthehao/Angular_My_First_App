@@ -3,6 +3,12 @@
     [disabled]=" ! allowNewServer"
 >Add Server</button>
 
+<!-- Cach 1: Dung String Interpolation -->
+<!-- <p>{{ allowNewServer }}</p> -->
+<!-- Cach 2: Dung Property Binding -->
+<p [innerText]="allowNewServer"></p>
+
+
 <app-server></app-server>
 <app-server></app-server>
 <app-server></app-server>
