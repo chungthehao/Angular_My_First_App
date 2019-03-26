@@ -17,6 +17,9 @@
 
 <p *ngIf="serverCreated">Server was created! Server name is {{ serverName }}</p>
 
+<app-server *ngFor="let server of servers"></app-server>
+
+
 <!-- <p>{{ serverCreationStatus }}</p> -->
 
 <!-- Cach 1: Dung String Interpolation -->
@@ -24,9 +27,3 @@
 <!-- Cach 2: Dung Property Binding -->
 <!-- <p [innerText]="allowNewServer"></p> -->
 
-
-<app-server></app-server>
-<app-server></app-server>
-<app-server></app-server>
-<app-server></app-server>
-<app-server></app-server>
